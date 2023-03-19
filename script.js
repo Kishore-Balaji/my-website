@@ -1,0 +1,1 @@
+alert(Thank you will contact you soon);

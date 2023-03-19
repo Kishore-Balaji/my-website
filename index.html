@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/favicon.ico">
+  <title>Kishore Balaji Portfolio</title>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="assets/logo.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-ellipsis-vertical" onclick="openmenu()"></i>
+      </nav>
+      
+      <div class="header-content">
+        <div class="header-text">
+          <p>A Web Developer</p>
+          <h1>Hello world! <br> Myself <span>Kishore Balaji</span></h1>
+        </div>
+        <div class="header-image">
+          <img src="assets/header.png">
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- -----------------About------------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="assets/user.png">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Hello there! My name is Kishore Balaji, and I am a web developer and an engineering graduate. With a passion for technology and a strong foundation in computer science, I have developed a broad range of skills that enable me to deliver robust and innovative solutions. As a web developer, I specialize in designing and developing dynamic websites that are both visually appealing and highly functional.</p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('Academic-Credentials')">Academic Credentials</p>
+              <p class="tab-links" onclick="opentab('Relationship')">Relationship</p>
+              <p class="tab-links" onclick="opentab('Likes-Dislikes')">Likes and Dislikes</p>
+            </div>
+            <div class="tab-contents active-tab" id="Academic-Credentials">
+              <ul>
+                <li><span>2023</span><br>B.E Computer Science and Engineering<br>Velammal Engineering College</li>
+                <li><span>2019</span><br>HSC from Shri Anand Jain Vidyalaya Mat.Hr.Sec School</li>
+                <li><span>2017</span><br>SSLC from Shri Anand Jain Vidyalaya Mat.Hr.Sec School</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Relationship">
+              <ul>
+                <li><span>Relationship</span><br>Not interested</li> 
+              </ul>
+            </div>
+            <div class="tab-contents" id="Likes-Dislikes">
+              <ul>
+                <li><span>Likes</span><br>
+                  <li>Coding and Debugging</li>
+                  <li>Learning new techs</li>
+                  </li>
+                <li><span>Dislike</span><br>
+                <li>Lazy to work on time</li> 
+                </li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ------------------------------------Skills-------------------------------------- -->
+  <div id="Skills">
+  <div class="container">
+    <div class="skill-heading">
+      <h1 class="skill-header">Skills</h1>
+    </div>
+    
+    <div id="skill-circle">
+      <div class="item" style="--d:0s"><img src="assets/1.png">HTML</div>
+      <div class="item" style="--d:-2s"><img src="assets/2.png">CSS</div>
+      <div class="item" style="--d:-4s"><img src="assets/3.png">JS</div>
+      <div class="item" style="--d:-6s"><img src="assets/4.png">REACT</div>
+      <div class="item" style="--d:-8s"><img src="assets/5.png">MYSQL</div>
+      <div class="item" style="--d:-10s"><img src="assets/6.png">C</div>
+      <div class="item" style="--d:-12s"><img src="assets/7.png">JAVA</div>
+      <div class="item" style="--d:-14s"><img src="assets/8.png">Adobe XD</div>
+      <div class="item" style="--d:-16s"><img src="assets/9.png">Adobe Photoshop</div>
+      <div class="item" style="--d:-18s"><img src="assets/10.png">Adobe Illustrator</div>
+    </div>
+  </div>
+  </div>
+
+   <!-- ------------------------------------ Projects -------------------------------------- -->
+
+   <div id="projects">
+    <div class="container">
+      <h1 class="sub-title">Projects</h1>
+      <div class="project-list">
+        <div>
+          <i class="fa-solid fa-music"></i>
+          <h2>Song Recommender Chatbot</h2>
+          <p>Our song recommender chatbot was built with care, React and Spotify's API, a perfect pair, The user interface was intuitive and sleek,Making music recommendations, a task that was not bleak. The chatbot utilized Spotify's vast music library,And with our algorithm, we made recommendations lively, Users could input their preferred genre or artist, And the chatbot would provide recommendations that would assist. The recommendation system was based on user history, Personalizing the chatbot's suggestions, for a unique melody,Our project aimed to enhance the music discovery, And with React and Spotify, we achieved that reverie.</p>
+          <a href="https://github.com/Kishore-Balaji/Song-Recommender-Chatbot.git">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-droplet"></i>
+          <h2>Plasma Donor Application</h2>
+          <p>Our project involved building a web application, Using Flask and IBM DB as our foundation, Our team worked tirelessly to create, An app that would perform, and not break. With IBM DB, we had a robust database solution, And Flask made it easy to develop with precision, We hosted the app on IBM Docker, Ensuring our app's security like a locker. The application served a specific purpose, And with the use of IBM technologies, we achieved that surplus, Our project was a testament to the power of collaboration, And we delivered an app that exceeded expectation.</p>
+          <a href="https://github.com/IBM-EPBL/IBM-Project-25111-1659953787.git">Learn more</a>
+        </div>
+      </div>
+    </div>
+   </div>
+    <!-- ------------------------------------ Contact -------------------------------------- -->
+
+    <div id="contact">
+      <div class="container">
+        <h1 class="sub-title">Contact me</h1>
+        <div class="row">
+          <div class="contact-top">
+            <div class="social-icon">
+            <ul>
+              <li><a href="mailto:kishorebalaji2507@gmail.com"><i class="fa-regular fa-envelope"></i> kishorebalaji257@gmail.com</a></li>
+              <li><a href="tel:8939769119"><i class="fa-solid fa-phone"></i> +91 8939769119</a></li>
+              <li><a href=""><i class="fa-brands fa-linkedin"></i> Linked In</a></li>
+              <li><a href=""><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+            </ul> 
+            </div>
+            <div class="CV">  
+            <a href="assets/Kishore_Balaji_resume.pdf" download class="btn">Download CV</a>
+            </div>
+          </div>
+          <div class="contact-bottom">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name">
+              <input type="email" name="email" placeholder="Your Email">
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn" onclick="alert('Will contact you soon');">Submit</button>
+            </form>
+          </div> 
+        </div>
+      </div>
+      <p class="copyright">Copyright © Kishore Balaji</p>
+
+    </div>
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <script src="/script.js"></script>
+</body>
+</html>
